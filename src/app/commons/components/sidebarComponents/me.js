@@ -25,12 +25,12 @@ export default function Me({ activeProps }) {
           </div>
           <div className="dark:brightness-50  relative z-[-1]">
             <Image
-              src="/profilebg.jpg"
+              src="/profilebg1.webp"
               width={100}
               height={100}
               alt="bgprofile"
               priority
-              className="w-full rounded-lg bg-contain bg-bottom "
+              className="w-full rounded-lg bg-contain bg-bottom"
             ></Image>
           </div>
         </div>
@@ -43,12 +43,12 @@ export default function Me({ activeProps }) {
           <div className="md:-mt-12 mt-0 shadow-md md:border-2 md:z-10 z-0 md:border-white border-transparent  w-fit rounded-full">
             <div className="rounded-full overflow-hidden ">
               <Image
-                src="/me.jpg"
+                src="/me.webp"
                 loading="lazy"
                 width={90}
                 height={90}
                 alt="me"
-                className={`rounded-full scale-100  transition-all duration-[100000ms] delay-50 ease-linear md:w-[90px]  md:h-[90px]  ${
+                className={`rounded-full scale-100 aspect-square transition-all duration-[100000ms] delay-50 ease-linear md:w-[90px]  md:h-[90px]  ${
                   activeProps ? "w-[80px] h-[80px] " : "h-[40px] w-[40px]"
                 }`}
               ></Image>

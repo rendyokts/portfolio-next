@@ -6,7 +6,7 @@ export default function HeaderHome() {
   return (
     <div className="flex flex-col">
       <div className='flex flex-row justify-between'>
-      <h1 className="md:text-3xl text-2xl font-medium flex gap-1">Hi, I'm Reza <p>👋</p></h1>
+      <h1 className="md:text-3xl text-2xl font-medium flex gap-1">Hi, I'm Reza <p className="animate-shake">👋</p></h1>
         <Coffee/>
       </div>
       <ul className='flex md:space-x-8 space-x-0 px-5 py-2 md:flex-row flex-col '>
