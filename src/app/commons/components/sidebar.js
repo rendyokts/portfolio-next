@@ -7,13 +7,16 @@ import { Divider } from "@nextui-org/react";
 import { useState, useEffect, useRef } from "react";
 import Copyright from './elements/copyright';
 import ThemeSwitcher from './elements/ThemeSwitcher';
+import { motion } from "framer-motion";
+import useHasMounted from './hooks/useHasMounted'
+import useIsMobile from './hooks/useIsMobile'
 
 
 export default function Sidebar() {
   const [isActive, setIsActive] = useState(false);
   const dropdown = useRef(null);
   const pathname = usePathname()
-
+  const mounted = useHasMounted();
   useEffect(() => {
     // only add the event listener when the dropdown is opened
     if (!isActive) return;
@@ -26,6 +29,8 @@ export default function Sidebar() {
     // clean up
     return () => window.removeEventListener("click", handleClick);
   }, [isActive]);
+
+  if (!mounted) return null;
 
   return (
     <>
@@ -45,7 +50,7 @@ export default function Sidebar() {
             <button
               aria-label='btn-activator'
               ref={dropdown}
-              className={`flex-col ${isActive ? 'space-y-1.5 ' : 'space-y-1'} justify-center relative top-1  items-center flex md:hidden p-2 transition-all duration-500 ease-in-out`}
+              className={`flex-col ${isActive ? 'space-y-1.5 ' : 'space-y-1'} justify-center relative top-1 right-0 items-center flex md:hidden p-2 transition-all duration-500 ease-in-out`}
               onClick={() => {
                 setIsActive(!isActive);
               }}

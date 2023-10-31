@@ -1,5 +1,5 @@
 {
-  "name": "animelist",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
+    "@uidotdev/usehooks": "^2.4.1",
     "aos": "^2.3.4",
     "eslint-config-next": "^14.0.0",
     "framer-motion": "^10.16.4",
-    "next": "^14.0.0",
+    "next": "^14.0.1",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
