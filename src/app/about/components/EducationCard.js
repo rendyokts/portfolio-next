@@ -2,12 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import EDULISTS from './../../commons/constants/EducationLists'
 
-export default function EducationCard({logo,href,title,school,jurusan,year}) {
+export default function EducationCard() {
   return (
   <>
 <div className='rounded-xl transition-all duration-300 shadow-sm lg:hover:shadow-md flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-800 dark:bg-neutral-800'>
           <div>
-            <Image src='https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/lfbq9tsqbpacfjy7xka3' width={70} height={70} ></Image>
+            <Image src='https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/lfbq9tsqbpacfjy7xka3' width={70} height={70} alt='majuska'></Image>
           </div>
           <div className='flex flex-col space-y-2'>
             <Link href='https://zone.smpmuh7ska.sch.id/' target='_blank' className='text-md font-medium'>SMP Muhammadiyah 7 Surakarta</Link>
@@ -19,7 +19,7 @@ export default function EducationCard({logo,href,title,school,jurusan,year}) {
         </div>
 <div className='rounded-xl transition-all duration-300 shadow-sm lg:hover:shadow-md flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-800 dark:bg-neutral-800'>
           <div>
-            <Image src='https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/foxg3o3lqmhr7cvbmsyl' width={70} height={70} ></Image>
+            <Image src='https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/foxg3o3lqmhr7cvbmsyl' width={70} height={70} alt='smk5'></Image>
           </div>
           <div className='flex flex-col space-y-2'>
             <Link href='https://www.smkn5solo.sch.id/' target='_blank' className='md:text-md text-sm font-medium'>SMK Negeri 5 Surakarta</Link>

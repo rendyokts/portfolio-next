@@ -9,7 +9,6 @@ import Copyright from './elements/copyright';
 import ThemeSwitcher from './elements/ThemeSwitcher';
 import { motion } from "framer-motion";
 import useHasMounted from './hooks/useHasMounted'
-import useIsMobile from './hooks/useIsMobile'
 
 
 export default function Sidebar() {
@@ -47,7 +46,10 @@ export default function Sidebar() {
           <div className={`absolute md:right-1 md:-top-[148px] right-4 ${ isActive ? '-top-10' : 'top-1'} `}><ThemeSwitcher/></div>
           </div>
           <div>
-            <button
+            <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1}}
+            transition={{ duration: 0.5, delay: 0.5 }}
               aria-label='btn-activator'
               ref={dropdown}
               className={`flex-col ${isActive ? 'space-y-1.5 ' : 'space-y-1'} justify-center relative top-1 right-0 items-center flex md:hidden p-2 transition-all duration-500 ease-in-out`}
@@ -58,7 +60,7 @@ export default function Sidebar() {
               <span className={`hamburger-list ${isActive ? 'hamburger-list-active' : ''} origin-top-left transition-all duration-500 ease-in-out`}></span>
               <span className={`hamburger-list ${isActive ? 'hamburger-list-active' : ''} origin-left transition-all duration-500 ease-in-out`}></span>
               <span className={`hamburger-list ${isActive ? 'hamburger-list-active' : ''} origin-bottom-left transition-all duration-500 ease-in-out`}></span>
-            </button>
+            </motion.button>
           </div>
             
             </div>
