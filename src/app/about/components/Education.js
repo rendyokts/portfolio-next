@@ -1,7 +1,7 @@
 import SectionHeading from './../../commons/components/elements/SectionHeading';
 import SectionSubHeading from './../../commons/components/elements/SectionSubHeading';
 import EducationCard from './EducationCard'
-import EDULISTS from './../../commons/constants/EducationLists'
+import EDULISTS from '../../commons/constants/EducationList'
 import { TbSchool } from "react-icons/tb";
 import Image from 'next/image'
 import Link from 'next/link'

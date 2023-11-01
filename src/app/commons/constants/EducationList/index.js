@@ -5,7 +5,8 @@ export const EDULISTS = [
     href: 'https://zone.smpmuh7ska.sch.id/',
     year: '2020 - 2023',
     school: 'Junior High School',
-    jurusan: 'woilah'
+    gtw: null,
+    jurusan: null
   },
   {
     title: 'SMK Negeri 5 Surakarta',
@@ -13,6 +14,7 @@ export const EDULISTS = [
     href: 'https://www.smkn5solo.sch.id/',
     year: '2023 - 2026',
     school: 'Vocational High School',
+    gtw: '•',
     jurusan: 'Software and Game Development'
   }
 ]

@@ -7,13 +7,12 @@ export default function ContainerAOS({ children }) {
   useEffect(() => {
     AOS.init({
       once: false,
-      offset: 50,
       easing: "ease-in-out",
-      duration: 1000,
+      duration: 700,
     });
   }, []);
   return (
-    <div data-aos='fade-up'>
+    <div className='mb-12' data-aos='fade-up'>
       { children }
     </div>
   )
