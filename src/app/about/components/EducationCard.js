@@ -1,15 +1,25 @@
+'use client'
+import useHasMounted from '@/app/commons/components/hooks/useHasMounted';
+import { motion } from 'framer-motion';
 import Image from 'next/image'
 import Link from 'next/link'
 import { EDULISTS } from './../../commons/constants/EducationList/index';
 
 export default function EducationCard() {
+  const mounted = useHasMounted();
+
+  if (!mounted) return null;
   return (
     <>
   {EDULISTS.map((item,Index) => {
     return (
       <div key={Index} className='rounded-xl transition-all duration-300 shadow-sm lg:hover:shadow-md flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-800 dark:bg-neutral-800'>
-        <div >
-            <Image src={item.logo} width={60} height={60} alt={item.title}></Image>
+        <div className=''>
+            <motion.img 
+            initial={{ filter:'blur(20px)' }}
+            animate={{ filter:'blur(0px)' }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            src={item.logo} width={60} height={60} alt={item.title}></motion.img>
           </div>
           <div className='flex flex-col space-y-2'>
             <Link href={item.href} target='_blank' className='md:text-md text-sm font-medium'>{item.title}</Link>

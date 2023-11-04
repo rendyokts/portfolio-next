@@ -7,8 +7,8 @@ export default function ContainerAOS({ children }) {
   useEffect(() => {
     AOS.init({
       once: false,
-      easing: "ease-in-out",
-      duration: 700,
+      easing: "ease-out",
+      duration: 500,
     });
   }, []);
   return (
