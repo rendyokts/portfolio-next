@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@nextui-org/react": "^2.1.13",
     "@uidotdev/usehooks": "^2.4.1",
     "aos": "^2.3.4",

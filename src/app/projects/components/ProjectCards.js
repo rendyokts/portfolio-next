@@ -41,7 +41,7 @@ export default function ProjectsCards({ is_featured, slug , image , title ,descr
                       width={400}
                       height={400}
                       loading="lazy"
-                      className="rounded-t-xl"
+                      className="rounded-t-xl w-full "
                     ></Image>
                   </motion.div>
                 </div>
