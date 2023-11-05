@@ -6,7 +6,7 @@ export const PROJECTSLISTS = [
   {
     id: 4,
     title: 'codereza',
-    description: 'Personal website and portfolio built with Next Js, Tailwind CSS',
+    description: 'Personal website and portfolio built with Next Js, Javascript and Tailwind CSS',
     slug: 'code-reza',
     link_demo: 'https://rezareza.vercel.app',
     link_github: 'https://github.com/ryznoxy/portfolio-next',
@@ -22,7 +22,7 @@ export const PROJECTSLISTS = [
       'Javascript',
       'Framer Motion',
     ],
-    
+    aos_delay:200,
     
     image: 'https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/vfn7kmzs7pge5qgyeklj',
     is_show: true,
@@ -34,7 +34,7 @@ export const PROJECTSLISTS = [
   {
     id: 3,
     title: 'Linktree',
-    description: 'Linktree clone built with Next Js, Tailwind CSS',
+    description: 'Personal landing page built with Next.js 13 App Router, Javascript and Tailwind CSS.    ',
     slug: 'link-tree-clone-reza',
     link_demo: 'https://linktree-reza.vercel.app',
     link_github: 'https://github.com/ryznoxy/linktreeNext',
@@ -49,7 +49,7 @@ export const PROJECTSLISTS = [
       'Tailwind CSS',
       'Javascript',
     ],
-    
+    aos_delay:400,
     image: 'https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/dqcdnrrkrbr74iwbvatw',
     is_show: true,
     is_featured: true,
@@ -74,7 +74,7 @@ export const PROJECTSLISTS = [
       'HTML',
       'Tailwind CSS',
     ],
-    
+    aos_delay:600,
     image: 'https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/bnfurne6wxl6rpjhmtrx',
     is_show: true,
     is_featured: false,
@@ -99,7 +99,7 @@ export const PROJECTSLISTS = [
       'HTML',
       'Tailwind CSS',
     ],
-    
+    aos_delay:800,
     image: 'https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/vod8aeji876pm4xc4icj',
     is_show: true,
     is_featured: false,

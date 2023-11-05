@@ -1,6 +1,4 @@
-import { useTheme } from "next-themes";
 import Image from "next/image";
-import { MdVerified } from "react-icons/md";
 import React from "react";
 import { motion } from "framer-motion";
 import Verified from "./../elements/verified";
@@ -17,17 +15,14 @@ export default function Me({ activeProps }) {
       <div className="self-center md:self-auto ">
         <div className=" rounded-lg hidden md:flex relative">
           <Status />
-          <div className="dark:brightness-50 relative z-[-1]">
+          <div className="dark:brightness-50 relative w-full h-24 overflow-hidden rounded-xl">
             <Image
-              initial={{ filter: "blur(1px)" }}
-              animate={{ filter: "blur(0px)" }}
-              transition={{ duration: 0.1, delay: 0.3 }}
-              src="https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/vxap2c6rwklzhnxer89y"
-              width={300}
-              height={300}
+              src="https://res.cloudinary.com/dxgsqxdi3/image/upload/c_crop,g_auto,h_600,w_800/e_contrast:55/e_brightness:-9/e_gamma:150/e_gamma:127/qsngd6wxb7ywt9jrwni8.jpg"
+              width={200}
+              height={200}
               alt="bgprofile"
-              priority={true}
-              className="w-full rounded-lg transition-all duration-300 ease-in-out"
+              priority
+              className="w-full rounded-xl aspect-auto scale-125"
             ></Image>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import { Divider } from '@nextui-org/react';
 import ProjectLists from './ProjectLists'
 
 
