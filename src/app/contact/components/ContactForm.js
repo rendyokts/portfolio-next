@@ -1,22 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
-  const [isLoading, setIsLoading] = useState(false);
 
-  const refreshWindow = () => {
-    window.location.reload();
-  };
+  const inputName = useRef(null);
+  const inputEmail = useRef(null);
+  const inputMessage = useRef(null);
 
   if (state.succeeded) {
-    return (
-      <div className="space-y-2">
-        <h1 className="text-md">Thank you for your message!</h1>
-        <button onClick={refreshWindow} className='py-2 px-4 bg-neutral-600 hover:bg-neutral-700 text-neutral-200 rounded-lg'>Reload Page</button>
-      </div>
-    );
+    inputName.current.value = null;
+    inputEmail.current.value = null;
+    inputMessage.current.value = null;
   }
 
   return (
@@ -29,6 +25,7 @@ function ContactForm() {
             type="name"
             name="name"
             placeholder="Name"
+            ref={inputName}
             required
             className="bg-neutral-50 dark:bg-neutral-900 dark:outline-neutral-700 w-full rounded-lg p-2 outline outline-neutral-300 focus:outline-neutral-400"
           />
@@ -38,6 +35,7 @@ function ContactForm() {
             type="email"
             name="email"
             placeholder="Email"
+            ref={inputEmail}
             required
             className="bg-neutral-50 dark:bg-neutral-900 dark:outline-neutral-700 w-full rounded-lg p-2 outline outline-neutral-300 focus:outline-neutral-400"
           />
@@ -48,6 +46,7 @@ function ContactForm() {
             id="message"
             name="message"
             placeholder="Message"
+            ref={inputMessage}
             required
             className="bg-neutral-50 dark:bg-neutral-900 dark:outline-neutral-700 w-full rounded-lg p-2 outline outline-neutral-300 focus:outline-neutral-400"
           />
@@ -60,11 +59,10 @@ function ContactForm() {
 
         <button
           type="submit"
-          onClick={() => {!isLoading}}
           disabled={state.submitting}
           className="bg-neutral-600 hover:bg-neutral-700 text-neutral-200 rounded-lg py-2 px-4 w-full"
         >
-          {isLoading ? "Sending..." : "Submit"}
+          {state.submitting ? "Sending..." : "Submit"}
         </button>
       </form>
     </div>

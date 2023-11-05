@@ -18,7 +18,7 @@ export const CONTACTLIST = [
   {
     name: "Instagram",
     logo: <SiInstagram size={iconSize} />,
-    href: "https://www.instagram.com/ryznoxy/",
+    href: "https://www.instagram.com/r7zaa_/",
     color: 'bg-pink-600',
   },
   {
