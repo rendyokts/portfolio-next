@@ -31,7 +31,7 @@ export const CONTACTLIST = [
     name: "Discord",
     logo: <SiDiscord size={iconSize} />,
     href: "https://discord.com/users/274076893240754176",
-    color: 'bg-purple-600',
+    color: 'bg-purple-700',
   },
   {
     name: "Youtube",

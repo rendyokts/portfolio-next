@@ -46,6 +46,9 @@ export default function ProjectsLists() {
                 description={project.description}
                 tech_stack={project.tech_stack}
                 slug={project.slug}
+                link_demo={project.link_demo}
+                link_github={project.link_github}
+                tooltip={project.tooltip}
               />
               {/* <LazyprojectCard
                 is_featured={project.is_featured}

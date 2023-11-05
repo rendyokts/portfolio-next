@@ -18,9 +18,10 @@ export default function Me({ activeProps }) {
           <div className="dark:brightness-50 relative w-full h-24 overflow-hidden rounded-xl">
             <Image
               src="https://res.cloudinary.com/dxgsqxdi3/image/upload/c_crop,g_auto,h_600,w_800/e_contrast:55/e_brightness:-9/e_gamma:150/e_gamma:127/qsngd6wxb7ywt9jrwni8.jpg"
-              width={200}
-              height={200}
+              width={640}
+              height={480}
               alt="bgprofile"
+              aspe
               priority
               className="w-full rounded-xl aspect-auto scale-125"
             ></Image>

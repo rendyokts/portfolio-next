@@ -38,7 +38,7 @@ export default function ProjectDetail({ params }) {
                   Tech Stack :
                   <div className="flex items-center  text-2xl gap-4">
                     {project.tech_stack.map((children) => {
-                      return children
+                      return <>{children.icon}</>;
                     })}
                   </div>
                 </div>
@@ -65,6 +65,7 @@ export default function ProjectDetail({ params }) {
                 alt={project.title}
                 width={900}
                 height={900}
+                priority
                 className="w-full hover:scale-105 scale-100 transition-all duration-300 ease-in-out"
               />
             </div>
