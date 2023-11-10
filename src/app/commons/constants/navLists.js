@@ -26,13 +26,13 @@ export const navLists = [
     icon: <BiBox size={icon_size} />,
   },
   {
-    name: "contact",
-    link: "/contact",
-    icon: <BiPaperPlane size={icon_size} />,
-  },
-  {
     name: "dashboard",
     link: "/dashboard",
     icon: <BiCategoryAlt size={icon_size} />,
+  },
+  {
+    name: "contact",
+    link: "/contact",
+    icon: <BiPaperPlane size={icon_size} />,
   },
 ];

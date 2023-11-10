@@ -10,11 +10,11 @@ export default function Index() {
     <ContainerAOS>
       <div className=''>
       <HeaderHome/>
-      <Divider orientation='horizontal' className='my-4'/>
+      <Divider orientation='horizontal' className='my-6'/>
       <Career/>
-      <Divider orientation='horizontal' className='my-4'/>
+      <Divider orientation='horizontal' className='my-6'/>
       <SkillLists/>
-      <Divider orientation='horizontal' className='my-4'/>
+      <Divider orientation='horizontal' className='my-6'/>
       <ContactCard/>
       </div>
     </ContainerAOS>
