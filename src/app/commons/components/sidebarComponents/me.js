@@ -44,12 +44,12 @@ export default function Me({ activeProps }) {
                 initial={{ filter: "blur(20px)" }}
                 animate={{ filter: "blur(0px)" }}
                 transition={{ duration: 1, delay: 0.5 }}
-                src="https://res.cloudinary.com/dxgsqxdi3/image/upload/f_webp,fl_awebp,q_auto/v1698579874/m4qahcsy8cxgy9vq618b"
+                src="https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr"
                 loading="lazy"
                 width={90}
                 height={90}
                 alt="me"
-                className={`rounded-full scale-100 aspect-square transition-all duration-300  delay-50 ease-linear md:w-[90px]  md:h-[90px]  ${
+                className={`rounded-full scale-110 aspect-square transition-all duration-300  delay-50 ease-linear md:w-[90px]  md:h-[90px]  ${
                   activeProps ? "w-[80px] h-[80px] " : "h-[40px] w-[40px]"
                 } `}
               ></motion.img>

@@ -13,15 +13,19 @@
     "@nextui-org/react": "^2.1.13",
     "@uidotdev/usehooks": "^2.4.1",
     "aos": "^2.3.4",
+    "axios": "^1.6.1",
+    "clsx": "^2.0.0",
     "eslint-config-next": "^14.0.0",
     "framer-motion": "^10.16.4",
     "next": "^14.0.1",
     "next-themes": "^0.2.1",
+    "nextjs-toploader": "^1.6.4",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.2",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10",
