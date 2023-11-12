@@ -1,7 +1,6 @@
 import React from "react";
 
 import axios from "axios";
-const axios = require("axios");
 
 import {
   GITHUB_ACCOUNTS,
