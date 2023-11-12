@@ -17,8 +17,16 @@ function Stats() {
       </div>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
         {STATLISTS.map((stat) => (
-          <StatCard key={stat.title} isi={stat.isi} title={stat.title} angka={stat.angka} angka_show={stat.angka_show} />
+          <StatCard
+            key={stat.title}
+            isi={stat.isi}
+            title={stat.title}
+            angka={stat.angka}
+            angka_show={stat.angka_show}
+          />
         ))}
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Progress className={"mt-2"} />
       </div>
     </div>

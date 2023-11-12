@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function ContainerAOS({ children,delayAOS }) {
+export default function ContainerAOS({ children, className }) {
   useEffect(() => {
     AOS.init({
       once: false,
@@ -12,8 +12,8 @@ export default function ContainerAOS({ children,delayAOS }) {
     });
   }, []);
   return (
-    <div className='mb-12' data-aos='fade-up'>
-      { children }
+    <div className={`mb-12 ${className}`} data-aos="fade-up">
+      {children}
     </div>
-  )
+  );
 }

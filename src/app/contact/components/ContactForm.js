@@ -48,7 +48,7 @@ function ContactForm() {
             placeholder="Message"
             ref={inputMessage}
             required
-            className="bg-neutral-50 dark:bg-neutral-900 dark:outline-neutral-700 w-full rounded-lg p-2 outline outline-neutral-300 focus:outline-neutral-400"
+            className="bg-neutral-50 dark:bg-neutral-900 dark:outline-neutral-700 w-full rounded-lg p-2 outline outline-neutral-300 focus:outline-neutral-400 h-28"
           />
           <ValidationError
             prefix="Message"

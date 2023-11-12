@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <>
       <ContainerAOS>
-        <Index /> 
+        <Index />
         {/* <DashboardPage /> */}
       </ContainerAOS>
     </>
