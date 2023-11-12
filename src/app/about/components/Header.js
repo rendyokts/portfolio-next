@@ -10,7 +10,7 @@ export default function Header() {
           <p className='text-md dark:text-neutral-400'>A short story of me, not important but seem better than nothing.</p>
         </SectionSubHeading>
       </div>
-      <div className='border-b border-dashed border-neutral-600 dark:border-neutral-300'></div>
+      <div className='border-b border-dashed border-neutral-600 dark:border-neutral-500'></div>
       <p className='font-light text-md leading-7'>
         Hi, my name is Reza Adi, also known as Reza, is an aspiring front-end developer with just one month of experience. He has shown dedication and a 
         keen ability to master various web frameworks. Reza's journey began with a solid foundation in HTML, CSS, and JavaScript, enabling 

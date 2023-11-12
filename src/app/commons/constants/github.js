@@ -8,7 +8,7 @@ export const GITHUB_ACCOUNTS = [
   },
 ];
 export const GITHUB_API_BASE_URL = 'https://api.github.com/graphql'
-export const GITHUB_USER_QUERY = `query($username: String!) {
+export const GITHUB_USER_QUERY = `query({$username}) {
     user(login: $username) {
       contributionsCollection {
         contributionCalendar {

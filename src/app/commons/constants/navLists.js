@@ -5,6 +5,8 @@ import {
   BiLeaf,
   BiPaperPlane,
   BiBox,
+  BiPackage,
+  BiSitemap,
 } from "react-icons/bi";
 
 const icon_size = 20;
@@ -19,6 +21,11 @@ export const navLists = [
     name: "about",
     link: "/about",
     icon: <BiLeaf size={icon_size} />,
+  },
+  {
+    name: "roadmap",
+    link: "/roadmap",
+    icon: <BiSitemap size={icon_size} />,
   },
   {
     name: "projects",
