@@ -3,6 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Layouts from "./commons/components/Layouts";
 import NextTopLoader from "nextjs-toploader";
+import SpotifyTop from "./commons/components/elements/SpotifyTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,20 +25,19 @@ export default function RootLayout({ children }) {
     <html lang="en" className="light">
       <body className={sora.className}>
         <Providers>
-          <Layouts>
-            <NextTopLoader
-              color="#05b6d3"
-              initialPosition={0.08}
-              crawlSpeed={200}
-              height={3}
-              crawl={true}
-              showSpinner={true}
-              easing="ease"
-              speed={200}
-              shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
-            />
-            {children}
-          </Layouts>
+          <NextTopLoader
+            color="#05b6d3"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={true}
+            easing="ease"
+            speed={200}
+            shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
+          />
+          <SpotifyTop />
+          <Layouts>{children}</Layouts>
         </Providers>
       </body>
     </html>

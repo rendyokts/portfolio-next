@@ -1,19 +1,53 @@
 import SectionHeading from "@/app/commons/components/elements/SectionHeading";
 import SectionSubHeading from "@/app/commons/components/elements/SectionSubHeading";
 import { BiLogoGithub } from "react-icons/bi";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import GitHubCalendar from "react-github-calendar";
+import { Tooltip } from "@nextui-org/react";
+
+import { useTheme } from "next-themes";
+import useHasMounted from "@/app/commons/components/hooks/useHasMounted";
 // import { GITHUB_ACCOUNTS } from "@/app/commons/constants/github";
 
 function GithubHeader() {
+  const { theme , setTheme } = useTheme();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  })
+
+
   return (
     <div className="space-y-6">
       <div className="space-y-2">
         <SectionHeading title="Github" icon={<BiLogoGithub size={24} />} />
         <SectionSubHeading>
           <p>My Github Contributions</p>
+          <Link href="https://github.com/ryznoxy" target="_blank">
+            @ryznoxy
+          </Link>
         </SectionSubHeading>
       </div>
-      <div>UNDER DEVELOPMENT</div>
+      <div className=" mx-auto p-2 bg-neutral-50 dark:bg-neutral-900 rounded">
+        <GitHubCalendar
+          username="ryznoxy"
+          colorScheme={theme === "dark" ? "dark" : "light"}
+          blockMargin={4}
+          blockSize={14}
+          fontSize={12}
+          loading={loading ? true : false}
+          renderBlock={(block, activity) => (
+            <Tooltip content={`${activity.count} activities on ${activity.date}`} key={block} radius="sm">
+              {block}
+            </Tooltip>
+          )}
+        />
+      </div>
     </div>
   );
 }

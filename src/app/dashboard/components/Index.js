@@ -12,8 +12,8 @@ export default function Index({ githubData }) {
       <DashedDivider className={"my-6"} />
       <Stats />
       <Divider className="my-6" />
-      {/* <GithubHeader /> */}
-      <Contributions githubData={githubData} />
+      <GithubHeader />
+      {/* <Contributions githubData={githubData} /> */}
     </div>
   );
 }
