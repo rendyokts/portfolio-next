@@ -34,7 +34,7 @@ export const getAccessToken = async () => {
     const data = await response.json()
     return data.access_token
   } catch (error) {
-    console.log(error)
+    console.log()
   }
 }
 

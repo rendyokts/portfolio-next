@@ -1,18 +1,17 @@
 "use client";
+
 import { SiSpotify } from "react-icons/si";
-import Image from "next/image";
 import useSWR from "swr";
 import Link from "next/link";
 
 export default function SpotifyTop() {
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { data } = useSWR("/api/spotify", fetcher);
-  console.log(data);
 
   return (
     <>
       <Link href={data?.currentlyPlaying ? data?.href : ""} target="_blank">
-        <div className="w-full bg-green-500 p-1 fixed bottom-0 z-[999999999]">
+        <div className="w-full bg-green-500 p-1 fixed bottom-0 z-[999999999] rounded-t-lg">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 ">
@@ -26,9 +25,6 @@ export default function SpotifyTop() {
                   <h1 className="text-white text-sm">Not Listening</h1>
                 )}
               </div>
-              {data?.currentlyPlaying && (
-                <h1 className="text-white text-sm">Click Me</h1>
-              )}
             </div>
           </div>
         </div>
