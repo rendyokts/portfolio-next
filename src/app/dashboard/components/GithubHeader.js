@@ -11,16 +11,16 @@ import useHasMounted from "@/app/commons/components/hooks/useHasMounted";
 // import { GITHUB_ACCOUNTS } from "@/app/commons/constants/github";
 
 function GithubHeader() {
-  const { theme , setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [loading, setLoading] = useState(false);
+  const mounted = useHasMounted();
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  })
-
+  }, [mounted]);
 
   return (
     <div className="space-y-6">
@@ -42,10 +42,15 @@ function GithubHeader() {
           fontSize={12}
           loading={loading ? true : false}
           renderBlock={(block, activity) => (
-            <Tooltip content={`${activity.count} activities on ${activity.date}`} key={block} radius="sm">
+            <Tooltip
+              content={`${activity.count} activities on ${activity.date}`}
+              key={block}
+              radius="sm"
+            >
               {block}
             </Tooltip>
           )}
+          blockRadius={3}
         />
       </div>
     </div>
