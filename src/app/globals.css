@@ -103,5 +103,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400;
+  @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400 ;
 }

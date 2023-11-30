@@ -25,7 +25,7 @@ export default function ProjectDetail({ params }) {
         {project && (
           <div className="space-y-6 ">
             <div className="space-y-2">
-              <BackButton />
+              <BackButton href={'/projects'} />
               <SectionHeading title={project.title} />
               <SectionSubHeading>
                 <p>{project.description}</p>
