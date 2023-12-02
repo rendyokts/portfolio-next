@@ -45,7 +45,9 @@ function GithubHeader() {
             <Tooltip
               content={`${activity.count} activities on ${activity.date}`}
               key={block}
-              radius="sm"
+              closeDelay={50}
+              offset={10}
+              className="text-xs rounded-sm px-2"
             >
               {block}
             </Tooltip>

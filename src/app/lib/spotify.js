@@ -103,3 +103,26 @@ export async function getQueue(accessToken) {
     return null;
   }
 }
+
+export async function getTrack(accessToken, id) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${accessToken}}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    next: { revalidate: 60 },
+  };
+
+  try {
+    const response = await fetch(
+      `https://api.spotify.com/v1/tracks/${id}`,
+      requestOptions
+    );
+
+    const data = await response.json();
+    return data ? data : null;
+  } catch (err) {
+    return null;
+  }
+}

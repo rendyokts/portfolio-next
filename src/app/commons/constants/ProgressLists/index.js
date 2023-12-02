@@ -23,11 +23,11 @@ export const PROGRESSLISTS = [
     lists: [
       {
         name: "Next.js",
-        level: "41%",
+        level: "35%",
       },
       {
         name: "React.js",
-        level: "34%",
+        level: "28%",
       },
       {
         name: "Other",
