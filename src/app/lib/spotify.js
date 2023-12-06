@@ -70,30 +70,7 @@ export async function getLastPlayedTrack(accessToken) {
 
   try {
     const response = await fetch(
-      "https://api.spotify.com/v1/me/player/recently-played?limit=1",
-      requestOptions
-    );
-
-    const data = await response.json();
-    return data ? data : null;
-  } catch (err) {
-    return null;
-  }
-}
-
-export async function getQueue(accessToken) {
-  const myHeaders = new Headers();
-  myHeaders.append("Authorization", `Bearer ${accessToken}}`);
-
-  const requestOptions = {
-    method: "GET",
-    headers: myHeaders,
-    next: { revalidate: 60 },
-  };
-
-  try {
-    const response = await fetch(
-      "https://api.spotify.com/v1/me/player/queue",
+      "https://api.spotify.com/v1/me/player/recently-played",
       requestOptions
     );
 
@@ -117,6 +94,53 @@ export async function getTrack(accessToken, id) {
   try {
     const response = await fetch(
       `https://api.spotify.com/v1/tracks/${id}`,
+      requestOptions
+    );
+
+    const data = await response.json();
+    return data ? data : null;
+  } catch (err) {
+    return null;
+  }
+}
+
+export async function getTopTracks(accessToken) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${accessToken}}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    next: { revalidate: 60 },
+  };
+
+  try {
+    const response = await fetch(
+      "https://api.spotify.com/v1/me/top/tracks?limit=5",
+      requestOptions
+    );
+
+    const data = await response.json();
+    return data ? data : null;
+  } catch (err) {
+    return null;
+  }
+}
+
+
+export async function getPlaylist(accessToken) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${accessToken}}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    next: { revalidate: 60 },
+  };
+
+  try {
+    const response = await fetch(
+      "https://api.spotify.com/v1/me/playlists",
       requestOptions
     );
 

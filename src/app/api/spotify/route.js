@@ -2,8 +2,8 @@ import {
   getAccessToken,
   getCurrentTrack,
   getLastPlayedTrack,
-  getQueue,
   getTrack,
+  getTopTracks,
 } from "@/app/lib/spotify";
 
 import { NextResponse } from "next/server";
@@ -14,7 +14,7 @@ export async function GET() {
   const accessToken = await getAccessToken();
   const track = await getCurrentTrack(accessToken);
   const lastTrack = await getLastPlayedTrack(accessToken);
-  const queue = await getQueue(accessToken);
+  const topTracks = await getTopTracks(accessToken);
   const id = track ? track.item.id : null;
   const trackId = await getTrack(accessToken, id);
 
@@ -26,13 +26,13 @@ export async function GET() {
       { status: 500 }
     );
 
-  if (track) {
-    if (trackId) {
-      if (queue)
+  if (track)
+    if (trackId)
+      if (topTracks)
         return NextResponse.json({
-          queueName: queue,
           duration: trackId.duration_ms,
           id: track.item.id,
+          progress: track.progress_ms,
           name: track.item.name,
           artists: track.item.artists.map((artist) => {
             return { name: artist.name, href: artist.external_urls.spotify };
@@ -41,23 +41,20 @@ export async function GET() {
           albumArt: track.item.album.images[0],
           currentlyPlaying: true,
         });
-    }
-  }
 
-  if (lastTrack) {
+  if (lastTrack)
     return NextResponse.json({
-      last_name: lastTrack.items[0].track.name,
-      last_artists: lastTrack.items[0].track.artists.map((artist) => {
+      name: lastTrack.items[0].track.name,
+      artists: lastTrack.items[0].track.artists.map((artist) => {
         return {
           name: artist.name,
           href: artist.external_urls.spotify,
         };
       }),
-      last_href: lastTrack.items[0].track.external_urls.spotify,
-      last_albumArt: lastTrack.items[0].track.album.images[0],
-      last_currentlyPlaying: false,
+      href: lastTrack.items[0].track.external_urls.spotify,
+      albumArt: lastTrack.items[0].track.album.images[0],
+      currentlyPlaying: false,
     });
-  }
 
   return NextResponse.json(
     {

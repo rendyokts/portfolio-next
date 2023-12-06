@@ -7,11 +7,16 @@ import SectionHeading from "./SectionHeading";
 import SectionSubHeading from "./SectionSubHeading";
 import { BiLogoSpotify } from "react-icons/bi";
 import { Progress } from "@nextui-org/react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 
 export default function SpotifyCard() {
   const { data, error, isLoading } = useGetDataSpotify();
+
+  const progress = useMemo(
+    () => data && (data.progress / data.duration) * 100,
+    [data]
+  );
 
   const menit = data?.duration / 60000;
   const detik = data?.duration / 1000;
@@ -60,7 +65,7 @@ export default function SpotifyCard() {
           </SectionSubHeading>
         </div>
         <div className="w-full flex bg-neutral-100 dark:bg-neutral-800 rounded-2xl p-4 items-center">
-          <div className="flex justify-between items-center w-full">
+          <div className="flex justify-between  w-full">
             <div className="flex  items-center gap-6">
               <Link href={data?.href} target="_blank" rel="noopener noreferrer">
                 <div className="w-[75px] overflow-hidden rounded-lg sm:w-[100px] shadow-md">
@@ -73,24 +78,24 @@ export default function SpotifyCard() {
                 </div>
               </Link>
               <div className="flex flex-col items-start gap-1 md:gap-3">
-                <h1 className=" text-xs md:text-md font-semibold ">
-                  {data.currentlyPlaying ? "LISTENING" : null}
+                <h1 className=" text-sm md:text-md font-semibold ">
+                  {data.currentlyPlaying ? "LISTENING" : "LAST PLAYED"}
                 </h1>
                 <Link
-                  href={data?.currentlyPlaying ? data?.href : ""}
+                  href={data?.href}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <h3 className="text-lg font-bold hover:underline decoration-2 underline-offset-2">
-                    {data.currentlyPlaying ? data?.name : null}
+                    {data.name}
                   </h3>
                 </Link>
                 <h1 className=" font-semibold md:text-md text-sm">
-                  {data?.artists.map((artist) => artist.name).join(", ")}
+                  {data.artists.map((artist) => artist.name).join(", ")}
                 </h1>
               </div>
             </div>
-            <div className="flex flex-col gap-12 items-center h-full ">
+            <div className="flex flex-col gap-12  h-full ">
               <Link
                 href={"https://spotify.com"}
                 target="_blank"
@@ -99,9 +104,9 @@ export default function SpotifyCard() {
               >
                 <BiLogoSpotify className="md:w-8 md:h-8 h-5 w-5" />
               </Link>
-              <h1 className="text-sm font-semibold right-0 bottom-0 ">
+              {/* <h1 className="text-sm font-semibold right-0 bottom-0 ">
                 {duration_menit}
-              </h1>
+              </h1> */}
             </div>
           </div>
         </div>

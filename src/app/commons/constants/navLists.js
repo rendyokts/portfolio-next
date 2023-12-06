@@ -7,6 +7,7 @@ import {
   BiBox,
   BiPackage,
   BiSitemap,
+  BiPlay,
 } from "react-icons/bi";
 
 const icon_size = 20;
@@ -42,4 +43,9 @@ export const navLists = [
     link: "/contact",
     icon: <BiPaperPlane size={icon_size} />,
   },
+  // {
+  //   name: "player",
+  //   link: "/player",
+  //   icon: <BiPlay size={icon_size} />,
+  // }
 ];
