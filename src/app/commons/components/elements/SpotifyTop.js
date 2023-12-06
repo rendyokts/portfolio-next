@@ -29,7 +29,7 @@ export default function SpotifyTop() {
     return (
       <>
         {data?.currentlyPlaying ? (
-          <Link href={data?.currentlyPlaying ? data?.href : ""} target="_blank">
+          <Link href={data?.currentlyPlaying ? data?.href : "#"} target="_blank">
             <div className="w-full bg-green-600 p-1 fixed bottom-0 z-[999999999] rounded-t-lg">
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
@@ -48,7 +48,7 @@ export default function SpotifyTop() {
             </div>
           </Link>
         ) : (
-          <Link href={data?.currentlyPlaying ? data?.href : ""} target="_blank">
+          <Link href={data?.currentlyPlaying ? data?.href : "#"} target="_blank">
             <div className="w-full bg-green-600 p-1 fixed bottom-0 z-[999999999] rounded-t-lg">
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
