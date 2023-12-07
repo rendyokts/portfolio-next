@@ -21,7 +21,6 @@ export default function Me({ activeProps }) {
               width={640}
               height={480}
               alt="bgprofile"
-              aspe
               priority
               className="w-full rounded-xl aspect-auto scale-125"
             ></Image>

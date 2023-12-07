@@ -1,3 +1,5 @@
+"use client";
+
 import SectionHeading from "@/app/commons/components/elements/SectionHeading";
 import SectionSubHeading from "@/app/commons/components/elements/SectionSubHeading";
 import { BiLogoGithub } from "react-icons/bi";
