@@ -15,7 +15,7 @@ function Stats() {
           <p>My statistics.</p>
         </SectionSubHeading>
       </div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      {/* <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
         {STATLISTS.map((stat) => (
           <StatCard
             key={stat.title}
@@ -25,9 +25,9 @@ function Stats() {
             angka_show={stat.angka_show}
           />
         ))}
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Progress className={"mt-2"} />
+        <Progress />
       </div>
     </div>
   );

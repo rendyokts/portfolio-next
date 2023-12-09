@@ -127,8 +127,7 @@ export async function getTopTracks(accessToken) {
   }
 }
 
-
-export async function getPlaylist(accessToken) {
+export async function getPlaylist(accessToken, playlist_id) {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${accessToken}}`);
 
@@ -139,10 +138,7 @@ export async function getPlaylist(accessToken) {
   };
 
   try {
-    const response = await fetch(
-      "https://api.spotify.com/v1/me/playlists",
-      requestOptions
-    );
+    const response = await fetch(`${playlist_id}`, requestOptions);
 
     const data = await response.json();
     return data ? data : null;

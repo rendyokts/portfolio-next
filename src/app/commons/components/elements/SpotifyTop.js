@@ -40,10 +40,6 @@ export default function SpotifyTop() {
                     <SiSpotify size={20} color={"#000000"} />
                     <div className="text-black text-sm flex items-center gap-1">
                       <h1>Listening {data?.name}</h1>
-                      <h1>by</h1>
-                      <h1>
-                        {data?.artists.map((artist) => artist.name).join(", ")}
-                      </h1>
                     </div>
                   </div>
                 </div>
