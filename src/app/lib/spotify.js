@@ -146,3 +146,23 @@ export async function getPlaylist(accessToken, playlist_id) {
     return null;
   }
 }
+
+export async function getAlbumDetails(accessToken, album_id) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${accessToken}}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    next: { revalidate: 60 },
+  };
+
+  try {
+    const response = await fetch(`${album_id}`, requestOptions);
+
+    const data = await response.json();
+    return data ? data : null;
+  } catch (err) {
+    return null;
+  }
+}

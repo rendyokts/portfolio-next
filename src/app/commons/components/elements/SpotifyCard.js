@@ -76,7 +76,7 @@ export default function SpotifyCard() {
                 on{" "}
                 <Link
                   href={data.playlistHref}
-                  className="hover:underline text-sm font-medium capitalize"
+                  className="hover:underline text-sm font-medium "
                 >
                   {data.playlistName}
                 </Link>
