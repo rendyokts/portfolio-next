@@ -16,8 +16,35 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Reza | Portfolio",
+  title: "Reza - Personal Website",
   description: "Personal website, portfolio, roadmap, and more",
+  keywords: [
+    "Ryznoxy",
+    "Portfolio",
+    "ryznoxy Portfolio",
+    "Reza Reza Portfolio",
+    "ryznoxy my id",
+    "ryznoxy Reza Portfolio",
+    "Reza",
+  ],
+  creator: "Reza Adi N",
+  openGraph: {
+    title: "Reza - Personal Website",
+    description: "Personal website, portfolio, roadmap, and more",
+    url: "https://ryznox.my.id/",
+    siteName: "Ryznoxy",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  profile:
+    "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr",
 };
 
 export default function RootLayout({ children }) {
