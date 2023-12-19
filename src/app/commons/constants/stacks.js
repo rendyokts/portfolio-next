@@ -62,42 +62,42 @@ export const STACKS = [
     name: 'Material UI',
     icon: <SiMui size={iconSize} className="text-sky-400" />,
   },
-  {
-    name: 'Vite',
-    icon: <SiVite size={iconSize} className="text-purple-500" />,
-  },
+  // {
+  //   name: 'Vite',
+  //   icon: <SiVite size={iconSize} className="text-purple-500" />,
+  // },
   {
     name: 'ChakraUI',
     icon: <SiChakraui size={iconSize} className="text-teal-500" />,
   },
-  {
-    name: 'React Native',
-    icon: <SiReact size={iconSize} className="text-sky-600" />,
-  },
-  {
-    name: 'Firebase',
-    icon: <SiFirebase size={iconSize} className="text-yellow-500" />,
-  },
+  // {
+  //   name: 'React Native',
+  //   icon: <SiReact size={iconSize} className="text-sky-600" />,
+  // },
+  // {
+  //   name: 'Firebase',
+  //   icon: <SiFirebase size={iconSize} className="text-yellow-500" />,
+  // },
   {
     name: 'Framer Motion',
     icon: <SiFramer size={iconSize} />,
   },
-  {
-    name: 'Vue.js',
-    icon: <SiVuedotjs size={iconSize} className="text-green-500" />,
-  },
-  {
-    name: 'Express.js',
-    icon: <SiExpress size={iconSize} />,
-  },
-  {
-    name: 'Redux',
-    icon: <SiRedux size={iconSize} className="text-purple-500" />,
-  },
-  {
-    name: 'React Query',
-    icon: <SiReactquery size={iconSize} className="text-red-600" />,
-  },
+  // {
+  //   name: 'Vue.js',
+  //   icon: <SiVuedotjs size={iconSize} className="text-green-500" />,
+  // },
+  // {
+  //   name: 'Express.js',
+  //   icon: <SiExpress size={iconSize} />,
+  // },
+  // {
+  //   name: 'Redux',
+  //   icon: <SiRedux size={iconSize} className="text-purple-500" />,
+  // },
+  // {
+  //   name: 'React Query',
+  //   icon: <SiReactquery size={iconSize} className="text-red-600" />,
+  // },
   {
     name: 'HTML',
     icon: <SiHtml5 size={iconSize} className="text-orange-500" />,
@@ -106,25 +106,25 @@ export const STACKS = [
     name: 'CSS',
     icon: <SiCss3 size={iconSize} className="text-blue-500" />,
   },
-  {
-    name: 'Node JS',
-    icon: <SiNodedotjs size={iconSize} className="text-green-600" />,
-  },
+  // {
+  //   name: 'Node JS',
+  //   icon: <SiNodedotjs size={iconSize} className="text-green-600" />,
+  // },
   {
     name: 'Github',
     icon: <SiGithub size={iconSize} />,
   },
-  {
-    name: 'React Router',
-    icon: <SiReactrouter size={iconSize} className="text-pink-500" />,
-  },
-  {
-    name: 'React Hook Form',
-    icon: <SiReacthookform size={iconSize} className="text-pink-500" />,
-  },
-  {
-    name: 'React Table',
-    icon: <SiReacttable size={iconSize} className="text-rose-600" />,
-  }, 
+  // {
+  //   name: 'React Router',
+  //   icon: <SiReactrouter size={iconSize} className="text-pink-500" />,
+  // },
+  // {
+  //   name: 'React Hook Form',
+  //   icon: <SiReacthookform size={iconSize} className="text-pink-500" />,
+  // },
+  // {
+  //   name: 'React Table',
+  //   icon: <SiReacttable size={iconSize} className="text-rose-600" />,
+  // }, 
 ]
   

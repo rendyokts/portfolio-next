@@ -25,7 +25,7 @@ export default function ProjectDetail({ params }) {
         {project && (
           <div className="space-y-6 ">
             <div className="space-y-2">
-              <BackButton href={'/projects'} />
+              <BackButton href={"/projects"} />
               <SectionHeading title={project.title} />
               <SectionSubHeading>
                 <p>{project.description}</p>
@@ -69,8 +69,6 @@ export default function ProjectDetail({ params }) {
                 className="w-full hover:scale-105 scale-100 transition-all duration-300 ease-in-out"
               />
             </div>
-
-            <p>I Dont Have README.md</p>
           </div>
         )}
       </div>

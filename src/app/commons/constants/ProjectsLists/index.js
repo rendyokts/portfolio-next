@@ -10,12 +10,46 @@ const iconSize = 24;
 
 export const PROJECTSLISTS = [
   {
+    id: 5,
+    title: "PodoMoro",
+    description:
+      "Simple Pomodoro and Todo List App built with Next.js, JS, Tailwind CSS",
+    slug: "podomoro",
+    link_demo: "https://podo-moro.vercel.app/",
+    link_github: "https://github.com/ryznoxy/PodoMoro",
+    tech_stack: [
+      {
+        title: "Nextjs",
+        icon: <SiNextdotjs size={iconSize} />,
+      },
+      {
+        title: "TailwindCSS",
+        icon: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
+      },
+      {
+        title: "Javascript",
+        icon: <SiJavascript size={iconSize} className="text-yellow-400" />,
+      },
+    ],
+
+    tooltip: ["Next.js", "Tailwind CSS", "Javascript"],
+    aos_delay: 200,
+
+    image:
+      "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/h1y75yzv0qeqfkhngmbk",
+    is_show: true,
+    is_featured: true,
+    params: {
+      slug: "podomoro",
+    },
+  },
+  {
     id: 4,
-    title: "codereza",
+    title: "ryznox.my.id",
     description:
       "Personal website and portfolio built with Next Js, Javascript and Tailwind CSS",
-    slug: "code-reza",
-    link_demo: "https://rezareza.vercel.app",
+    slug: "ryznoxy-my-id",
+    link_demo: "https://ryznox.my.id",
     link_github: "https://github.com/ryznoxy/portfolio-next",
     tech_stack: [
       {
@@ -40,11 +74,11 @@ export const PROJECTSLISTS = [
     aos_delay: 200,
 
     image:
-      "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/vfn7kmzs7pge5qgyeklj",
+      "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/vihpx80m63fqrk20luul",
     is_show: true,
     is_featured: true,
     params: {
-      slug: "codereza",
+      slug: "ryznoxy-my-id",
     },
   },
   {
@@ -80,7 +114,7 @@ export const PROJECTSLISTS = [
     image:
       "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/dqcdnrrkrbr74iwbvatw",
     is_show: true,
-    is_featured: true,
+    is_featured: false,
     params: {
       slug: "linktree",
     },
@@ -92,24 +126,25 @@ export const PROJECTSLISTS = [
     slug: "v3-reza-portfolio",
     link_demo: "https://v3reza.vercel.app",
     link_github: "https://github.com/ryznoxy/v3reza",
-    tech_stack: [{
-      title: "HTML",
-      icon: <SiHtml5 size={iconSize} className="text-orange-500" />,
-    },
-    {
-      title: "TailwindCSS",
-      icon: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
-    },
-    {
-      title: null,
-      icon: null,
-    },
-    {
-      title: null,
-      icon: null,
-    },
+    tech_stack: [
+      {
+        title: "HTML",
+        icon: <SiHtml5 size={iconSize} className="text-orange-500" />,
+      },
+      {
+        title: "TailwindCSS",
+        icon: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
+      },
+      {
+        title: null,
+        icon: null,
+      },
+      {
+        title: null,
+        icon: null,
+      },
     ],
-    
+
     tooltip: ["HTML", "Tailwind CSS"],
     aos_delay: 600,
     image:
@@ -127,24 +162,25 @@ export const PROJECTSLISTS = [
     slug: "v2-reza-portfolio",
     link_demo: "https://v2portfolio.vercel.app/",
     link_github: "https://github.com/ryznoxy/v2portfolio",
-    tech_stack: [ {
-      title: "HTML",
-      icon: <SiHtml5 size={iconSize} className="text-orange-500" />,
-    },
-    {
-      title: "TailwindCSS",
-      icon: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
-    },
-    {
-      title: null,
-      icon: null,
-    },
-    {
-      title: null,
-      icon: null,
-    },
+    tech_stack: [
+      {
+        title: "HTML",
+        icon: <SiHtml5 size={iconSize} className="text-orange-500" />,
+      },
+      {
+        title: "TailwindCSS",
+        icon: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
+      },
+      {
+        title: null,
+        icon: null,
+      },
+      {
+        title: null,
+        icon: null,
+      },
     ],
-    
+
     tooltip: ["HTML", "Tailwind CSS"],
     aos_delay: 800,
     image:
