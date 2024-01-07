@@ -34,17 +34,17 @@ export default function ChatItems({
         height={40}
         className="rounded-full"
       />
-      <div className="flex flex-col space-y-2 w-full ">
+      <div className="flex flex-col space-y-2 w-full">
         <div className="flex items-center gap-5 w-full">
-          <div className="font-medium text-sm flex items-center gap-1 ">
-            <p className=" line-clamp-1 w-fit">{name}</p>
+          <div className="text-sm flex items-center space-x-1">
+            <p>{name}</p>
             {authorEmail === email && (
               <div className="text-xs">
                 <MdVerified className="text-blue-500 " size={20} />
               </div>
             )}
           </div>
-          <p className="text-xs text-neutral-500 mr-2 "> {time}</p>
+          {/* <span className="text-xs text-neutral-500 ">{time}</span> */}
         </div>
         <div
           className="flex items-center  mr-2"
@@ -52,7 +52,7 @@ export default function ChatItems({
           onMouseLeave={() => setHover(false)}
         >
           <div className="flex w-fit max-w-lg overflow-x-auto">
-            <p className=" bg-neutral-100 dark:bg-neutral-800  rounded-xl rounded-tl-sm px-4 py-2 text-sm">
+            <p className=" bg-neutral-100 dark:bg-neutral-800  rounded-xl rounded-tl-sm px-3 py-2 text-sm">
               {is_reply && (
                 <>
                   <span className="text-amber-600 whitespace-nowrap mr-1">
@@ -84,6 +84,7 @@ export default function ChatItems({
             </div>
           )}
         </div>
+        <span className="text-xs text-neutral-500 ">{time}</span>
       </div>
     </div>
   );

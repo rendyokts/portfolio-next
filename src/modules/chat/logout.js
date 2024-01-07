@@ -15,7 +15,13 @@ const Logout = () => {
   const authorEmail = process.env.NEXT_PUBLIC_AUTHOR_EMAIL;
 
   const handleSignOut = async () => {
-    await signOut(auth);
+    const signOutConfirm = confirm("Are you sure you want to sign out?");
+
+    if (signOutConfirm) {
+      await signOut(auth);
+    } else {
+      return;
+    }
   };
 
   return (

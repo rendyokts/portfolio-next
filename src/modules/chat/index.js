@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 import { getDatabase, onValue, ref, remove, set } from "firebase/database";
 import { auth, db } from "@/app/lib/firebase";
 import { v4 as uuidv4 } from "uuid";
@@ -120,7 +121,7 @@ const ChatRoom = ({ user }) => {
   return (
     <div className="w-full ">
       <div
-        className="flex flex-col space-y-4 h-[50vh]  scroll-smooth overflow-y-scroll no-scrollbar "
+        className="flex flex-col space-y-4 h-[50vh]  scroll-smooth overflow-y-scroll "
         ref={chatListRef}
       >
         {loading && <ChatSkeleton />}
@@ -146,16 +147,20 @@ const ChatRoom = ({ user }) => {
       <div className="pt-4">
         <div>
           {replyMessage.isReply && (
-            <div
-              className="bg-neutral-300 dark:bg-neutral-700 px-2 py-1 rounded-lg w-fit mb-2 flex gap-1 items-center text-sm"
+            <motion.div
+              initial={{ opacity: 0, y: +10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3, ease: [0.43, 0.13, 0.23, 0.96] }}
+              className="bg-neutral-300 dark:bg-neutral-700 px-2 py-1 rounded-lg w-fit mb-2 flex gap-1 items-center text-xs"
               onClick={() => setReplyMessage({ isReply: false, name: "" })}
             >
-              Reply to <h1 className="font-medium">{replyMessage.name}</h1>
+              Reply to <h1>{replyMessage.name}</h1>
               <IoIosCloseCircle
                 className="text-neutral-600 dark:text-neutral-400 cursor-pointer "
                 size={20}
               />
-            </div>
+            </motion.div>
           )}
         </div>
         {user && (
