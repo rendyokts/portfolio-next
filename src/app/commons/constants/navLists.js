@@ -8,6 +8,7 @@ import {
   BiPackage,
   BiSitemap,
   BiPlay,
+  BiChat,
 } from "react-icons/bi";
 
 const icon_size = 20;
@@ -32,6 +33,11 @@ export const navLists = [
     name: "projects",
     link: "/projects",
     icon: <BiBox size={icon_size} />,
+  },
+  {
+    name: "chat",
+    link: "/chat",
+    icon: <BiChat size={icon_size} />,
   },
   {
     name: "dashboard",
