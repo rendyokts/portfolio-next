@@ -147,12 +147,12 @@ const ChatRoom = ({ user }) => {
         <div>
           {replyMessage.isReply && (
             <div
-              className="bg-neutral-300 px-2 py-1 rounded-lg w-fit mb-2 flex gap-1 items-center text-sm"
+              className="bg-neutral-300 dark:bg-neutral-700 px-2 py-1 rounded-lg w-fit mb-2 flex gap-1 items-center text-sm"
               onClick={() => setReplyMessage({ isReply: false, name: "" })}
             >
               Reply to <h1 className="font-medium">{replyMessage.name}</h1>
               <IoIosCloseCircle
-                className="text-neutral-600 cursor-pointer"
+                className="text-neutral-600 dark:text-neutral-400 cursor-pointer "
                 size={20}
               />
             </div>
