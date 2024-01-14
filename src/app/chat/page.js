@@ -4,8 +4,8 @@ import ChatRoom from "./Chat";
 const NoSSR = dynamic(() => import("./Chat"), { ssr: false });
 
 export const metadata = {
-  title: "Chat | Reza",
-  description: "A short story about Reza",
+  title: "Chat | Rendi",
+  description: "A short story about Rendi",
   alternates: {
     canonical: `${process.env.DOMAIN}/chat`,
   },

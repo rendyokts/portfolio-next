@@ -7,7 +7,7 @@ export default function Copyright() {
             <span className="text-red-500 animate-pulse">❤</span>
             <span>by</span>
             <span className="hover:dark:text-neutral-400 cursor-pointer">
-              Rezaa
+              Rendi
             </span>
           </div>
   )

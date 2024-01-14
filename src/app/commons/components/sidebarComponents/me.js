@@ -57,12 +57,12 @@ export default function Me({ activeProps }) {
             </motion.div>
           </motion.div>
           <div className="md:mt-4 mt-2 text-xl font-semibold flex justify-center items-center gap-2">
-            <h1 className="md:text-xl text-lg">Reza Adi N</h1>
+            <h1 className="md:text-xl text-lg">Rendi Oktavian</h1>
             <Verified />
           </div>
 
           <p className="text-sm text-neutral-700 dark:text-neutral-500 hidden md:flex">
-            @ryznoxy
+            @rndokts
           </p>
         </div>
       </div>

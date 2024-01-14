@@ -29,16 +29,16 @@ export const navLists = [
     link: "/roadmap",
     icon: <BiSitemap size={icon_size} />,
   },
-  {
-    name: "projects",
-    link: "/projects",
-    icon: <BiBox size={icon_size} />,
-  },
-  {
-    name: "chat",
-    link: "/chat",
-    icon: <BiChat size={icon_size} />,
-  },
+  // {
+  //   name: "projects",
+  //   link: "/projects",
+  //   icon: <BiBox size={icon_size} />,
+  // },
+  // {
+  //   name: "chat",
+  //   link: "/chat",
+  //   icon: <BiChat size={icon_size} />,
+  // },
   {
     name: "dashboard",
     link: "/dashboard",

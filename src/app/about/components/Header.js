@@ -12,12 +12,12 @@ export default function Header() {
       </div>
       <div className='border-b border-dashed border-neutral-600 dark:border-neutral-500'></div>
       <p className='font-light text-md leading-7'>
-        Hi, my name is Reza Adi, also known as Reza, is an aspiring front-end developer with just one month of experience. He has shown dedication and a 
-        keen ability to master various web frameworks. Reza's journey began with a solid foundation in HTML, CSS, and JavaScript, enabling 
+        Hi, my name is Rendi, also known as Rendi, is an aspiring front-end developer with just one month of experience. He has shown dedication and a 
+        keen ability to master various web frameworks. Rendi's journey began with a solid foundation in HTML, CSS, and JavaScript, enabling 
         him to create basic web pages and delve into popular frameworks like TailwindCSS, React, and Angular.</p>
       <p className='font-light text-md leading-7'>
-        What distinguishes Reza is his quick adaptability to new challenges, making him a promising front-end developer. Despite his limited
-        experience, he actively seeks resources and tutorials to stay up-to-date with web development's evolving landscape. Reza's dedication
+        What distinguishes Rendi is his quick adaptability to new challenges, making him a promising front-end developer. Despite his limited
+        experience, he actively seeks resources and tutorials to stay up-to-date with web development's evolving landscape. Rendi's dedication
         and versatility mark him as a valuable addition to any web development team, and his journey has just begun. He's on the path to
         becoming a skilled professional adept at using a wide range of web frameworks.</p>
       <p className='font-light text-md leading-7'>

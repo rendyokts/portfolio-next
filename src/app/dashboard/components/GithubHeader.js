@@ -30,8 +30,8 @@ function GithubHeader() {
         <SectionHeading title="Github" icon={<BiLogoGithub size={24} />} />
         <SectionSubHeading>
           <p>My Github Contributions</p>
-          <Link href="https://github.com/ryznoxy" target="_blank">
-            @ryznoxy
+          <Link href="https://github.com/rendyokts" target="_blank">
+            @rendyokts
           </Link>
         </SectionSubHeading>
       </div>

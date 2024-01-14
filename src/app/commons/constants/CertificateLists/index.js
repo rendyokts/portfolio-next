@@ -1,26 +1,26 @@
 export const CERTIFICATELISTS = [
   {
-    title: "Belajar Dasar Pemrograman Web",
+    title: "Introduction to Cyber Security",
     image:
-      "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/crnwlj8bnshj2untqr2u",
+      "https://res.cloudinary.com/ddyw1qr9c/image/upload/f_auto,q_auto/b4vkggvg6a77maigsfwc",
     description:
-      "Learn the basic components of HTML and CSS which are the main foundations for becoming a front-end web developer.",
-    diberikan: "Oct 8, 2023",
-    berlaku: "Oct 8, 2026",
-    id_certificate: "N9ZO52N1YPG5",
-    by: "dicoding",
-    slug: "belajar-dasar-pemrograman-web",
+      "Learn the basic Cyber Security.",
+    diberikan: "Oct 17, 2023",
+    berlaku: "Oct 17, 2026",
+    id_certificate: "NDLDE2PQ3CVS",
+    by: "Google/Coursera",
+    slug: "introduction-to-cyber-security",
   },
   {
-    title: "Belajar Membuat Front-End Web untuk Pemula",
+    title: "Belajar Dasar Pemrograman Javascript",
     image:
-      "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/hvtpez5zz9obmmiob5pr",
+      "https://res.cloudinary.com/ddyw1qr9c/image/upload/f_auto,q_auto/tyfdgfqxkzbzqmcm1pzw",
     description:
       "Study material regarding DOM manipulation, Events, and Web Storage to improve website functionality and interactivity.",
-    diberikan: "Oct 8, 2023",
-    berlaku: "Oct 8, 2026",
-    id_certificate: "53XE4K980ZRN",
-    by: "dicoding",
-    slug: "belajar-membuat-front-end-web-untuk-pemula",
+    diberikan: "May 11, 2023",
+    berlaku: "May 11, 2026",
+    id_certificate: "MRZMQQ62KPYQ",
+    by: "Dicoding",
+    slug: "belajar-dasar-pemrograman-javascript",
   },
 ];

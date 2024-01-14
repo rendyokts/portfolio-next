@@ -5,7 +5,7 @@ import React from 'react';
 export default function Coffee() {
   return (
     <>
-      <Link href='https://saweria.co/ryznoxy' target='_blank' aria-label='saweria'>
+      <Link href='#' target='_blank' aria-label='saweria'>
         <BiCoffee size={24} className="text-3xl"/>
       </Link>
     </>

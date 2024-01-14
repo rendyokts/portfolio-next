@@ -5,15 +5,15 @@ export const PROGRESSLISTS = [
     lists: [
       {
         name: "JavaScript",
-        level: "44%",
+        level: "60%",
       },
       {
-        name: "TypeScript",
+        name: "Java",
         level: "9%",
       },
       {
-        name: "Other",
-        level: "5%",
+        name: "Python",
+        level: "30%",
       },
     ],
   },
@@ -26,7 +26,7 @@ export const PROGRESSLISTS = [
         level: "35%",
       },
       {
-        name: "React.js",
+        name: "Flask",
         level: "28%",
       },
       {

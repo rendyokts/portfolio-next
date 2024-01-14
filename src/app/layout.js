@@ -16,17 +16,17 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Home | Reza",
+  title: "Home | Rendi",
   description: "Personal website, portfolio, roadmap, and more",
   keywords:
-    "Ryznoxy ,Portfolio,ryznoxy Portfolio,Reza, Reza Portfolio,ryznoxy my id,ryznoxy Reza Portfolio,Reza",
-  creator: "Reza Adi N",
+    "Rendyokts ,Portfolio,rendyokts Portfolio,Rendi, Rendi Portfolio,rendyokts my id,rendyokts Rendi Portfolio,Rendi",
+  creator: "Rendi Oktavian",
   openGraph: {
-    title: "Reza - Personal Website",
+    title: "Rendy - Personal Website",
     description:
-      "Personal website, portfolio, roadmap, and more of Ryznoxy AKA Reza",
-    url: "https://ryznox.my.id/",
-    siteName: "Ryznoxy",
+      "Personal website, portfolio, roadmap, and more of Rendyokts AKA Rendy",
+    url: "#",
+    siteName: "Rendyokts",
     images: [
       {
         url: "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr",

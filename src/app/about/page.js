@@ -2,8 +2,8 @@ import ContainerAOS from "../commons/components/elements/ContainerAOS";
 import Index from "./components/index";
 
 export const metadata = {
-  title: "About | Reza",
-  description: "A short story about Reza",
+  title: "About | Rendi",
+  description: "A short story about Rendi",
   alternates: {
     canonical: `${process.env.DOMAIN}/about`,
   },
