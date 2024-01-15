@@ -45,13 +45,13 @@ export default function Me({ activeProps }) {
               className="rounded-full overflow-hidden "
             >
               <Image
-                src="https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr"
+                src="https://res.cloudinary.com/ddyw1qr9c/image/upload/f_auto,q_auto/xr0mnpj7a9yutbqf3vfy"
                 loading="lazy"
-                width={90}
-                height={90}
+                width={150}
+                height={120}
                 alt="me"
                 className={`rounded-full scale-110 aspect-square transition-all duration-300  delay-50 ease-linear md:w-[90px]  md:h-[90px]  ${
-                  activeProps ? "w-[80px] h-[80px] " : "h-[40px] w-[40px]"
+                  activeProps ? "w-[90px] h-[90px] " : "h-[50px] w-[50px]"
                 } `}
               ></Image>
             </motion.div>

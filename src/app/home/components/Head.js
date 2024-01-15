@@ -10,7 +10,7 @@ export default function HeaderHome() {
         <Coffee/>
       </div>
       <ul className='flex md:space-x-8 space-x-0 px-5 py-2 md:flex-row flex-col '>
-        <li className='list-disc text-md'>Beginner Cyber Security</li>
+        <li className='list-disc text-md'>Beginner Front End & Cyber Security</li>
         <li className='list-disc text-md'>Based in Jakarta 🇮🇩</li>
       </ul>
       <p className='my-2 md:leading-9 leading-7 text-sm'>An enthusiastic and experienced junior Front-end developer with a strong focus on front-end development & Cyber Security. Proficient in design and possessing a deep understanding of all aspects of web technology. A collaborative team player dedicated to creating efficient, scalable, and visually appealing web applications.</p>
