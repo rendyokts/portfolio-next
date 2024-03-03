@@ -41,7 +41,7 @@ export default function Career() {
                     <h1>{profession}</h1>
                     <div className="flex items-center gap-1 md:gap-2 text-xs mt-1">
                       <Link
-                        href="/"
+                        href={link}
                         className="text-neutral-500 dark:text-neutral-400 underline underline-offset-2"
                       >
                         {name}

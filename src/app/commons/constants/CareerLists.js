@@ -1,13 +1,15 @@
 import { BiQuestionMark } from "react-icons/bi";
-import logoImage from '../public/zki.png';
+// import logoImage from '/zki.webp';
+// import Image from 'next/image';
 
 const ICON_SIZE = '30'
+const LOGO_SIZE = '40'
+const logoZKI = '/zki.webp'
 export const CareerLists = [
   {
     name: 'Zona Kreatif ID',
-    link: '',
-    // logo: <BiQuestionMark size={ICON_SIZE}/>,
-    logo: <img src={logoImage} alt={"Zona Kreatif ID" width={ICON_SIZE} height={ICON_SIZE} />,
+    link: 'https://zonakreatif.id/',
+    logo: <img src={logoZKI} alt="Zona Kreatif ID" width={LOGO_SIZE} height={LOGO_SIZE} />,
     location: 'Depok',
     date: 'Maret 2023 - Present',
     during: '~ 1 Year',
